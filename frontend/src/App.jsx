@@ -33,11 +33,10 @@ function App() {
   }, [])
 
   let handlesubmit = async () => {
-    let url = 'https://todo-list-assignment-8.onrender.com'
     if (!text.trim()) return;
 
     try {
-      const res = await Axiox.post(url,
+      const res = await Axiox.post(`https://todo-list-assignment-8.onrender.com/todo`,
         {
           todo: text,
           completed: false
