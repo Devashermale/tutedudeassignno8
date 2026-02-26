@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './app.css'
+import './App.css'
 import { useEffect } from "react";
 import Axiox from 'axios';
 import trash from './assets/trash.png'
