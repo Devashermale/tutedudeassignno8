@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await Axiox.get(`https://todo-list-assignment-8.onrender.com/`);
+        const res = await Axiox.get(`https://todo-list-assignment-8.onrender.com`);
         settodo(res.data)
       } catch (error) {
         seterror(error.message)
@@ -33,7 +33,7 @@ function App() {
   }, [])
 
   let handlesubmit = async () => {
-    let url = 'https://todo-list-assignment-8.onrender.com/'
+    let url = 'https://todo-list-assignment-8.onrender.com'
     if (!text.trim()) return;
 
     try {
@@ -50,7 +50,7 @@ function App() {
   }
   let edittask = async (id) => {
     try {
-      await Axiox.put(`https://todo-list-assignment-8.onrender.com//todo/${id}`)
+      await Axiox.put(`https://todo-list-assignment-8.onrender.com/todo/${id}`)
       settodo(todo)
     } catch (error) {
 
