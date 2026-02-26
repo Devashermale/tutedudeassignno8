@@ -121,7 +121,7 @@ return (
                     className=" border p-1 grow rounded"
                     value={edittext}
                     onChange={(e) => setedittext(e.target.value)} />
-                  <button onClick={() => saveEdit(item._id)} className=" bg-green-600 m-2 content-end rounded"><img src={save}/></button>
+                  <button onClick={() => saveEdit(item._id)} className=" bg-green-600 m-2 content-end rounded inline pr-5"><img src={save}/></button>
                   <button onClick={() => setediting(null)}></button>
                 </>
               ) : (
