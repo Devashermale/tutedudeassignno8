@@ -1,2 +1,23 @@
 1. backend folder structure
+    1. deployment link --> https://todo-list-assignment-8.onrender.com/
 
+     1) the run for backend folder 
+      |
+     \ /
+       server js file
+        | --> node server.js command to run folder (npm run dev) or (node server.js)
+        |-- |  --> mongodb connection 
+            | --> i added ip address given by render.com 
+            | --> connected successfully 
+
+  no need of any nessary envoriement 
+
+2)fronend folder 
+|--> command to run (npm run dev)
+deployment link --> https://tutedudeassignno8.vercel.app/
+
+
+3) challenges in creating todo
+the main challenge was the error handling the got main error multiple time mongodb disconnection the i got some good things i used the try catch statement mostly
+in my code thats why i used them no error the cors policy problem  the mostly got i solve it then got axios error in files of frontend 
+  
