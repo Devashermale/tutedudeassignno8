@@ -1,0 +1,15 @@
+[
+  {
+    "applyTo": "*",
+    "headers": [
+      {
+        "name": "header-name-1",
+        "value": "header value"
+      },
+      {
+        "name": "header-name-2",
+        "value": "header value"
+      }
+    ]
+  }
+]
