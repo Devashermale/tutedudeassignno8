@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(cors({
-  origin: 'https://tutedudeassignno8.vercel.app/'}));
+  origin: 'https://tutedudeassignno8.vercel.app'}));
 app.use('/',todo);
 
 
