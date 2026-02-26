@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await Axiox.get(` http://localhost:3000/`);
+        const res = await Axiox.get(`https://todo-list-assignment-8.onrender.com/`);
         settodo(res.data)
       } catch (error) {
         seterror(error.message)
@@ -33,7 +33,7 @@ function App() {
   }, [])
 
   let handlesubmit = async () => {
-    let url = 'http://localhost:3000/todo'
+    let url = 'https://todo-list-assignment-8.onrender.com/'
     if (!text.trim()) return;
 
     try {
@@ -50,7 +50,7 @@ function App() {
   }
   let edittask = async (id) => {
     try {
-      await Axiox.put(`http://localhost:3000/todo/${id}`)
+      await Axiox.put(`https://todo-list-assignment-8.onrender.com//todo/${id}`)
       settodo(todo)
     } catch (error) {
 
@@ -59,7 +59,7 @@ function App() {
   }
   let deletetask = async (id) => {
     try {
-      await Axiox.delete(`http://localhost:3000/todo/${id}`);
+      await Axiox.delete(`https://todo-list-assignment-8.onrender.com/todo/${id}`);
       settodo(todo.filter(item => item._id !== id));
     } catch (err) {
       console.error(err);
@@ -67,7 +67,7 @@ function App() {
   }
   let toggleComplete = async (id, currentStatus) => {
     try {
-      const res = await Axiox.put(`http://localhost:3000/todo/${id}`, {
+      const res = await Axiox.put(`https://todo-list-assignment-8.onrender.com/todo/${id}`, {
         completed: !currentStatus
       });
 
@@ -84,7 +84,7 @@ function App() {
   }
   const saveEdit = async (id) => {
     try {
-      const res = await Axiox.put(`http://localhost:3000/todo/${id}`, {
+      const res = await Axiox.put(`https://todo-list-assignment-8.onrender.com/todo/${id}`, {
         todo: edittext
       });
       settodo(todo.map(item => item._id === id ? res.data : item));
