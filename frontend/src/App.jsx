@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const res = await Axiox.get(`https://todo-list-assignment-8.onrender.com/`);
+        const res = await Axiox.get(`https://todo-list-assignment-8.onrender.com`);
         settodo(res.data)
       } catch (error) {
         seterror(error.message)
